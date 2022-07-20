@@ -31,7 +31,13 @@ class _HomePageState extends State<HomePage> {
                         )),
 
                     // Notification
-                    const Icon(Icons.notifications, color: Colors.white),
+                    Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue[600],
+                        ),
+                        padding: const EdgeInsets.all(16),
+                        child: const Icon(Icons.notifications,
+                            color: Colors.white)),
                   ],
                 )
               ],
