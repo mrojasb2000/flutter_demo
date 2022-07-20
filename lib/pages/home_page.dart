@@ -24,6 +24,7 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     // Hi Jared!
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text("Hi Jared!",
                             style: TextStyle(
