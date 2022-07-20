@@ -23,12 +23,20 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     // Hi Jared!
-                    const Text("Hi Jared!",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                        )),
+                    Column(
+                      children: [
+                        const Text("Hi Jared!",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            )),
+                        Text(
+                          "23 Jan 2022",
+                          style: TextStyle(color: Colors.blue[200]),
+                        ),
+                      ],
+                    ),
 
                     // Notification
                     Container(
