@@ -34,6 +34,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                         decoration: BoxDecoration(
                           color: Colors.blue[600],
+                          borderRadius: BorderRadius.circular(12),
                         ),
                         padding: const EdgeInsets.all(16),
                         child: const Icon(Icons.notifications,
