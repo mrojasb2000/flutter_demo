@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/components/emoticon_face.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -81,7 +82,6 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(
                   height: 25,
                 ),
-
                 // how do you feel?
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -98,6 +98,31 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
+                const SizedBox(
+                  height: 25,
+                ),
+                // 4 different faces
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    // bad
+                    const EmiticonFace(
+                      emoticonFace: '😡',
+                    ),
+                    // fine
+                    const EmiticonFace(
+                      emoticonFace: '😀',
+                    ),
+                    // well
+                    const EmiticonFace(
+                      emoticonFace: '😃',
+                    ),
+                    // excellent
+                    const EmiticonFace(
+                      emoticonFace: '🤩',
+                    ),
+                  ],
+                )
               ],
             ),
           ),
