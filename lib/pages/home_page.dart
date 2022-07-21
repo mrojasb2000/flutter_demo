@@ -19,6 +19,7 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.all(25.0),
             child: Column(
               children: [
+                // greeting row
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -32,6 +33,9 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 24,
                               fontWeight: FontWeight.bold,
                             )),
+                        const SizedBox(
+                          height: 8,
+                        ),
                         Text(
                           "23 Jan 2022",
                           style: TextStyle(color: Colors.blue[200]),
@@ -49,6 +53,24 @@ class _HomePageState extends State<HomePage> {
                         child: const Icon(Icons.notifications,
                             color: Colors.white)),
                   ],
+                ),
+
+                // search bar
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.blue[600],
+                      borderRadius: BorderRadius.circular(4)),
+                  padding: const EdgeInsets.all(12),
+                  child: Row(children: [
+                    const Icon(
+                      Icons.search,
+                      color: Colors.white,
+                    ),
+                    const Text(
+                      'Search',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ]),
                 )
               ],
             ),
