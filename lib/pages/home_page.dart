@@ -77,7 +77,27 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(color: Colors.white),
                     ),
                   ]),
-                )
+                ),
+                const SizedBox(
+                  height: 25,
+                ),
+
+                // how do you feel?
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text("How do you feel",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        )),
+                    const Icon(
+                      Icons.more_horiz,
+                      color: Colors.white,
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
