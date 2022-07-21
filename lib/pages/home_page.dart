@@ -106,20 +106,64 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     // bad
-                    const EmiticonFace(
-                      emoticonFace: '😡',
+                    Column(
+                      children: [
+                        const EmiticonFace(
+                          emoticonFace: '😡',
+                        ),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        const Text(
+                          'Bad',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
                     ),
                     // fine
-                    const EmiticonFace(
-                      emoticonFace: '😀',
+                    Column(
+                      children: [
+                        const EmiticonFace(
+                          emoticonFace: '😀',
+                        ),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        const Text(
+                          'Fine',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
                     ),
                     // well
-                    const EmiticonFace(
-                      emoticonFace: '😃',
+                    Column(
+                      children: [
+                        const EmiticonFace(
+                          emoticonFace: '😃',
+                        ),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        const Text(
+                          'Well',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
                     ),
                     // excellent
-                    const EmiticonFace(
-                      emoticonFace: '🤩',
+                    Column(
+                      children: [
+                        const EmiticonFace(
+                          emoticonFace: '🤩',
+                        ),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        const Text(
+                          'Excellent',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
                     ),
                   ],
                 )
