@@ -190,16 +190,39 @@ class _HomePageState extends State<HomePage> {
               // White block
               Expanded(
                 child: Container(
-                  color: Colors.grey[100],
+                  padding: const EdgeInsets.all(25),
+                  color: Colors.grey[200],
                   child: Center(
                     child: Column(
                       children: [
+                        // exercises heading
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text('Excersices'),
-                            Icon(Icons.more_horiz),
+                            const Text(
+                              'Exercises',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              ),
+                            ),
+                            const Icon(Icons.more_horiz),
                           ],
                         ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        // listview of exercises
+                        Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(16)),
+                          child: const ListTile(
+                            leading: Icon(Icons.favorite),
+                            title: Text('Speaking Skills'),
+                            subtitle: Text('15 Exercises'),
+                          ),
+                        )
                       ],
                     ),
                   ),
