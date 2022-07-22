@@ -184,7 +184,9 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-
+              const SizedBox(
+                height: 25,
+              ),
               // White block
               Expanded(
                 child: Container(color: Colors.white),
