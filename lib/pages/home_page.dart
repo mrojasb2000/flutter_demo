@@ -189,9 +189,20 @@ class _HomePageState extends State<HomePage> {
               ),
               // White block
               Expanded(
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(50),
-                  child: Container(color: Colors.white),
+                child: Container(
+                  color: Colors.grey[100],
+                  child: Center(
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text('Excersices'),
+                            Icon(Icons.more_horiz),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ],
