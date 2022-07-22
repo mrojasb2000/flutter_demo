@@ -189,7 +189,10 @@ class _HomePageState extends State<HomePage> {
               ),
               // White block
               Expanded(
-                child: Container(color: Colors.white),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Container(color: Colors.white),
+                ),
               ),
             ],
           ),
